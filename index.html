@@ -4,12 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./index.css" rel="stylesheet" />
     <title>Draw</title>
   </head>
   <body>
+    <div class="sidebar">
+      <ul>
+        <li>
+          <label for="color">Colour:</label>
+          <input type="color" name="color" id="" />
+        </li>
+        <li>
+          <label for="weight">Thickness</label>
+          <input type="number" name="weight" min="2" max="150" value="3" />
+        </li>
+        <li>
+          <button id="clear"><i class="fa fa-trash"></i></button>
+        </li>
+      </ul>
+    </div>
     <!-- add p5js library from cdn -->
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
-    <script src="./index.js" />
-    <link href="./index.css" rel="stylesheet" />
+    <!-- ad personal js after -->
+    <script src="./index.js"></script>
   </body>
 </html>
