@@ -1,4 +1,6 @@
 // window.onload(console.log("Hello There"));
+const weightEl = document.querySelector("#weight");
+const colorEl = document.querySelector("#color");
 // setup p5js
 function setup() {
   //create full width + height
@@ -15,7 +17,9 @@ function draw() {
   //do this when mouse is pressed
   if (mouseIsPressed) {
     // create stroke color
-    stroke("black");
+    stroke(colorEl.value);
+    //the thickness of the line
+    strokeWeight(weightEl.value);
     // draw line between previous mouse position and current mouse position
     line(mouseX, mouseY, pmouseX, pmouseY);
   }

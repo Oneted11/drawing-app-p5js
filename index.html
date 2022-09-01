@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link href="./index.css" rel="stylesheet" />
     <title>Draw</title>
   </head>
@@ -12,17 +16,22 @@
       <ul>
         <li>
           <label for="color">Colour:</label>
-          <input type="color" name="color" id="" />
+          <input type="color" name="color" id="color" />
         </li>
         <li>
           <label for="weight">Thickness</label>
-          <input type="number" name="weight" min="2" max="150" value="3" />
+          <input
+            type="number"
+            name="weight"
+            min="2"
+            max="150"
+            value="3"
+            id="weight"
+          />
         </li>
         <li>
           <button id="clean">
-            <img
-              src="https://img.icons8.com/ios-filled/50/000000/delete--v1.png"
-            />
+            <span class="material-symbols-outlined"> delete </span>
           </button>
         </li>
       </ul>
