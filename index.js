@@ -7,27 +7,16 @@ function setup() {
   background(255);
 }
 
+// let path = [];
+
 function draw() {
   //disable fill
   noFill();
-
+  //do this when mouse is pressed
   if (mouseIsPressed) {
-    //store xy of mouse
-    const point = {
-      x: mouseX,
-      y: MouseY,
-    };
-    //add xy to path i.e. line
-    path.push(point);
+    // create stroke color
+    stroke("black");
+    // draw line between previous mouse position and current mouse position
+    line(mouseX, mouseY, pmouseX, pmouseY);
   }
-  //actually draw on canvas
-  strokeWeight(4);
-  stroke(237, 34, 93);
-  beginShape();
-  //for all the points mouse is pressed add vertex
-  path.forEach((point) => {
-    // stroke(51);
-    vertex(point.x, point.y);
-  });
-  endShape;
 }
