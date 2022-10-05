@@ -47,3 +47,11 @@
   font-size: 12px;
   margin-bottom: 3px;
 }
+/* make slider vertical */
+#weight {
+  /* transform: rotate(-90deg); */
+  /* height: 70px; */
+  /* width: 30vh; */
+  height: 150px;
+  -webkit-appearance: slider-vertical;
+}
