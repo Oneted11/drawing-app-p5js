@@ -1,6 +1,8 @@
 // window.onload(console.log("Hello There"));
 const weightEl = document.querySelector("#weight");
 const colorEl = document.querySelector("#color");
+const saveEl = document.querySelector("#save");
+const deleteEl = document.querySelector("#clean");
 // setup p5js
 function setup() {
   //create full width + height
@@ -24,3 +26,16 @@ function draw() {
     line(mouseX, mouseY, pmouseX, pmouseY);
   }
 }
+
+function savePng() {
+  saveCanvas("untitled", "png");
+}
+
+//save onclick
+saveEl.addEventListener("click", (event) => {
+  savePng();
+});
+//clean onclick
+deleteEl.addEventListener("click", (event) => {
+  clear();
+});
